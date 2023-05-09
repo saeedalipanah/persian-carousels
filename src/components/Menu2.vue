@@ -37,15 +37,15 @@ export default {
   data() {
     return {
       slides: [
-        "https://i.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts",
-        "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-        "https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ",
-        "https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I",
-        "https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg",
-        "https://i.picsum.photos/id/227/1024/683.jpg?hmac=63Bm3-6abEba_BO4lpAKdrnmSL04wZpwK17xue1mCXw",
-        "https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs",
-        "https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g",
-        "https://i.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU",
+        "slide(1).jpg",
+        "slide(2).jpg",
+        "slide(3).jpg",
+        "slide(4).jpg",
+        "slide(5).jpg",
+        "slide(6).jpg",
+        "slide(7).jpg",
+        "slide(8).jpg",
+        "slide(9).jpg",
       ],
       current: 1,
       prev: 0,
@@ -149,14 +149,14 @@ export default {
   .points {
     .point {
       height: .625rem;
-      width: 10px;
+      width: .625rem;
       border-radius: 50%;
       background-color: rgb(173, 173, 173);
-      margin: 0 3px;
+      margin: 0 .1875rem;
       transition: all 0.5s ease;
       &.active {
-        width: 25px;
-        border-radius: 10px;
+        width: 1.5625rem;
+        border-radius: .625rem;
         background-color: rgb(255, 255, 255);
         transition: all 0.5s ease;
       }

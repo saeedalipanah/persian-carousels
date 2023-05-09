@@ -1,16 +1,21 @@
 <template>
   <div class="menu-crousel">
     <div class="carousel-items flex">
-      <div 
+      <div
         class="carousel-item"
-        :class="`${i === current ? 'current' : i === prev ? 'prev' : i === next ? 'next' : ''}`"
         v-for="(slide, i) in slides"
-        :key="i">
-        <img 
-          :src="slide" 
-          alt="image"
-          class="image"
-        >
+        :key="i"
+        :class="`${
+          i === current
+            ? 'current'
+            : i === prev
+            ? 'prev'
+            : i === next
+            ? 'next'
+            : ''
+        }`"
+      >
+        <img :src="require(`@/assets/images/${slide}`)" alt="image" class="image" />
       </div>
     </div>
   </div>
@@ -19,8 +24,7 @@
 <script>
 export default {
   props: ["slides", "current", "next", "prev"],
-  methods: {
-  }
+  methods: {},
 };
 </script>
 
@@ -42,7 +46,7 @@ export default {
       position: absolute;
       top: 30%;
       left: 50%;
-      transform: translate(calc(100% + 12rem), -50% scale(.6));
+      transform: translate(calc(100% + 12rem), -50% scale(0.6));
       transition: all 1s ease;
       width: 30rem;
       height: 20rem;
@@ -52,7 +56,6 @@ export default {
         transform: translate(-50%, -50%);
         z-index: 50;
         transition: all 1s ease;
-      
       }
       &.prev {
         opacity: 0.5;

@@ -2,7 +2,7 @@
   <div class="slides-wrapper">
     <div class="slide" v-for="(slide, index) in slides" :key="index">
       <transition name="slide">
-        <div class="s"  v-if="index === activeSlide">
+        <div class="s" v-if="index === activeSlide">
           <div class="fitst-service">{{ slide.beforeText }}</div>
           <div class="titr my-3">{{ slide.title }}</div>
           <div class="main-text">{{ slide.content }}</div>
@@ -20,9 +20,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.slide{
+.slides-wrapper {
   position: relative;
-  .s{
+  .slide {
     position: absolute;
   }
 }

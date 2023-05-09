@@ -79,10 +79,10 @@ export default {
   },
 
   created() {
-    setInterval(() => {
-      this.activeSlide++;
-      if (this.activeSlide >= this.slides.length) this.activeSlide = 0;
-    }, 3000);
+    // setInterval(() => {
+    //   this.activeSlide++;
+    //   if (this.activeSlide >= this.slides.length) this.activeSlide = 0;
+    // }, 3000);
   },
 };
 </script>
